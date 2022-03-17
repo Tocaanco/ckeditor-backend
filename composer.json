@@ -1,0 +1,31 @@
+{
+    "name": "tocaan/ckeditor5",
+    "description": "this package helps to ckeditor5 to your forms",
+    "authors": [
+        {
+            "name": "Tocaan",
+            "email": "info@tocaan.com"
+        }
+    ],
+    "require": {
+        "laravelcollective/html": "*",
+        "nesbot/carbon": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ckeditor5\\CkEditor5ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "SewidanField\\": "src/"
+        },
+        "files": [
+            "src/fieldLoader.php",
+            "src/filesAttachment.php"
+        ]
+    }
+}

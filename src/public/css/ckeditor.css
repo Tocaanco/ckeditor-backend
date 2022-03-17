@@ -1,0 +1,52 @@
+/**
+ * @license Copyright (c) 2014-2022, CKSource - Frederico Knabben. All rights reserved.
+ * This file is licensed under the terms of the MIT License (see LICENSE.md).
+ */
+
+:root {
+	--ck-sample-editor-min-height: 400px;
+	--ck-sample-editor-z-index: 10;
+}
+
+/* --------- EDITOR STYLES  ---------------------------------------------------------------------------------------- */
+
+.editor__editable,
+/* Classic build. */
+main .ck-editor[role='application'] .ck.ck-content,
+/* Decoupled document build. */
+.ck.editor__editable[role='textbox'],
+.ck.ck-editor__editable[role='textbox'],
+/* Inline & Balloon build. */
+.ck.editor[role='textbox'] {
+	width: 100%;
+	background: #fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	min-height: var(--ck-sample-editor-min-height);
+	padding: 1.5em 2em;
+}
+
+main .ck-editor[role='application'] {
+	overflow: auto;
+}
+
+.ck.ck-editor__editable {
+	background: #fff;
+	border: 1px solid hsl(0, 0%, 70%);
+	width: 100%;
+}
+
+/* Because of sidebar `position: relative`, Edge is overriding the outline of a focused editor. */
+.ck.ck-editor__editable {
+	position: relative;
+	z-index: var(--ck-sample-editor-z-index);
+}
+
+.editor-container {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+	width: 100%;
+	justify-content: center;
+}
