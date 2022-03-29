@@ -27,12 +27,5 @@
             "src/fieldLoader.php",
             "src/filesAttachment.php"
         ]
-    },
-    "repositories": [
-        {
-            "packagist": false,
-            "type": "vcs",
-            "url": "https://github.com/Tocaanco/ckeditor-backend.git"
-        }
-    ]
+    }
 }
