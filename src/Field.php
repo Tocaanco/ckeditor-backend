@@ -80,7 +80,7 @@ class Field
     {
         $field_attributes = $this->buildFieldAttributes($field_attributes , [
             "placeholder" => $label,
-            "class" => "form-control ckeditor5",
+            "class" => "form-control rtlEditor",
             "rows" => "8",
             "cols" => "8",
             "data-name" => $name,

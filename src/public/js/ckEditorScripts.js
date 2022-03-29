@@ -94,7 +94,7 @@ class MyUploadAdapter {
 const editors = {};
 function generateCkEditor5(){
 
-    jQuery('.ckeditor5').each(function (index, currentElement) {
+    jQuery('.rtlEditor , .ltrEditor').each(function (index, currentElement) {
 
         ClassicEditor.create(currentElement, {
 
@@ -119,4 +119,5 @@ function generateCkEditor5(){
         );
     });
 }
+
 generateCkEditor5();
