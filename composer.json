@@ -21,7 +21,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "SewidanField\\": "src/"
+            "Ckeditor5\\": "src/"
         },
         "files": [
             "src/fieldLoader.php",
