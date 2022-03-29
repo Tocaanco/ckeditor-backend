@@ -21,11 +21,11 @@ php artisan vendor:publish --provider="Ckeditor5\CkEditor5ServiceProvider"
   
 ```html
     {{-- styles --}}
-    <link href="{{asset('SewidanField/plugins/ck-editor-5/css/ckeditor.css')}}" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="{{asset('ckeditor5/css/ckeditor.css')}}" rel="stylesheet" id="style_components" type="text/css" />
 
     {{-- scripts --}}
-    <script src="{{asset('SewidanField/plugins/ck-editor-5/js/ckeditor.js')}}"></script>
-    <script src="{{asset('SewidanField/plugins/ck-editor-5/js/ckEditorScripts.js')}}"></script>
+    <script src="{{asset('ckeditor5/js/ckeditor.js')}}"></script>
+    <script src="{{asset('ckeditor5/js/ckEditorScripts.js')}}"></script>
 ```
 after appending script and style files , you can use it simple like this
 ```php
