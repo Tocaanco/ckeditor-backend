@@ -39,5 +39,3 @@ don't forget to add this script on submitting your form
             editor.updateSourceElement()
         });
     }
-```# Swedan-form
-# ckeditor-backend
