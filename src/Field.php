@@ -12,7 +12,6 @@ use Form;
 class Field
 {
     private $config;
-    private $view_path = 'ckeditor5::fields';
     private $app_path = 'ckeditor5::layouts.field-app';
 
     function __construct($theme = null)
@@ -57,17 +56,6 @@ class Field
         $params['field_type'] = $field_type;
         return view($this->app_path, $params);
     }
-
-    /**
-     * @param $nav_id
-     * @return mixed
-     */
-    public function langNavTabs($nav_id = 'first')
-    {
-        return view($this->view_path.'.lang-nav-tabs',compact('nav_id'))->render();
-    }
-
-
 
     /**
      * @param $name
