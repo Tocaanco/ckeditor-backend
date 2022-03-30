@@ -15,7 +15,7 @@ class CkEditor5ServiceProvider extends ServiceProvider {
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/field.php', 'ckeditor5'
+            __DIR__.'/../config/ckeditor5.php', 'ckeditor5'
         );
     }
 }
