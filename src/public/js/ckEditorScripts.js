@@ -107,7 +107,7 @@ function generateCkEditor5(){
         })
             .then(editor => {
 
-                editors[$(currentElement).attr('id')] = editor;
+                editors[$(currentElement).attr('name')] = editor;
                 // window.editor = editor;
 
                 editor.plugins.get('FileRepository').createUploadAdapter = (loader) => {
