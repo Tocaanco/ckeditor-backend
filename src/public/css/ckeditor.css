@@ -50,3 +50,7 @@ main .ck-editor[role='application'] {
 	width: 100%;
 	justify-content: center;
 }
+
+.cat-block, .product-grid{
+	border-radius:  Value 
+}
