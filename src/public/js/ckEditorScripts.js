@@ -94,7 +94,7 @@ class MyUploadAdapter {
 const editors = {};
 function generateCkEditor5(){
 
-    jQuery('.rtlEditor , .ltrEditor').each(function (index, currentElement) {
+    jQuery('.rtlEditor , .ltrEditor , .ckeditor5').each(function (index, currentElement) {
 
         ClassicEditor.create(currentElement, {
             toolbar: {
